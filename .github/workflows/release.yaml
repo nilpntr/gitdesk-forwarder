@@ -27,4 +27,5 @@ jobs:
             @semantic-release/commit-analyzer
             @semantic-release/release-notes-generator
             @bpgeck/semantic-release-kaniko
+            @semantic-release/git
             @semantic-release/github
