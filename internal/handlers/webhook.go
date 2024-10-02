@@ -58,6 +58,7 @@ func HandleWebhook(c *gin.Context, webhook config.Webhook) {
 		return
 	}
 
+	// Send the message to slack if the webhook url is defined
 	if webhook.SlackWebhookUrl != nil {
 		if slack, ok := messengers.Messengers["slack"]; ok {
 			if err := slack.SendMessage(*webhook.SlackWebhookUrl, dto.ObjectAttributes.Title, dto.ObjectAttributes.Description, dto.ObjectAttributes.Url); err != nil {
