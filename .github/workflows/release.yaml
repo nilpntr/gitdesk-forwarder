@@ -20,3 +20,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
+        with:
+          extra_plugins: |
+            @semantic-release/commit-analyzer
+            @semantic-release/release-notes-generator
+            @bpgeck/semantic-release-kaniko
+            @semantic-release/github
