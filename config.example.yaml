@@ -1,0 +1,7 @@
+botUsername: 'support-bot'
+port: 54321
+
+webhooks:
+  - secretToken: thisisasecret
+    listenPath: /BEA0AD56-8A4C-44AF-A23C-74D9C7077C8A
+    slackWebhookUrl: https://hooks.slack.com/services/test/test/test
