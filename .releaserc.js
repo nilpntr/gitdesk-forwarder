@@ -30,5 +30,6 @@ module.exports = {
             }
         ],
         "@semantic-release/github"
-    ]
+    ],
+    "repositoryUrl": "https://github.com/nilpntr/gitdesk-forwarder.git",
 }
