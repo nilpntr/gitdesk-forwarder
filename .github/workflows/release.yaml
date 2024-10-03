@@ -37,7 +37,9 @@ jobs:
       - uses: int128/kaniko-action@v1
         with:
           push: true
-          tags: sammobach/gitdesk-forwarder:${{ steps.release.outputs.new_release_version }},sammobach/gitdesk-forwarder:latest
+          tags:
+            - sammobach/gitdesk-forwarder:${{ steps.release.outputs.new_release_version }}
+            - sammobach/gitdesk-forwarder:latest
           cache: true
           cache-repository: sammobach/gitdesk-forwarder/cache
 
